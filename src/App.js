@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import Map from "./Map";
-import LocationsList from "./LocationsList";
+import Map from "./components/Map";
+import LocationsList from "./components/LocationsList";
 import "./styles.css";
 import { handleExport, handleImport } from "./helper";
 
@@ -91,8 +91,8 @@ const App = () => {
         onAddMarker={handleAddMarker}
         onRemoveMarker={handleRemoveMarker}
       />
-      <div className="flex flex-col">
-        <div className="flex flex-row bg-white p-6 rounded shadow justify-between">
+      <div className="flex flex-col w-full">
+        <div className="flex flex-row bg-white p-6 rounded shadow-xl justify-between">
           <h2 className="text-lg font-medium mb-4">Export Locations</h2>
           <button
             className="bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-500"
@@ -101,7 +101,7 @@ const App = () => {
             Export
           </button>
         </div>
-        <div className="bg-white p-6 rounded shadow">
+        <div className="bg-white p-6 rounded shadow-lg">
           <h2 className="text-lg font-medium mb-4">Import Locations</h2>
 
           <div className="flex space-x-4">

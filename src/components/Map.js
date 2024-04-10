@@ -8,7 +8,7 @@ const containerStyle = {
 
 const Map = ({ markers, center, onClick, onMarkerClick, selectedMarker, onInfoClose }) => {
   return (
-    <LoadScript googleMapsApiKey="">
+    <LoadScript googleMapsApiKey="AIzaSyDP_1Mzt-AqRmyxWZgcuZ1mak9AFRyvoeQ">
       <GoogleMap
         mapContainerStyle={containerStyle}
         center={center}

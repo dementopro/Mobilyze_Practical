@@ -8,11 +8,11 @@ const LocationsList = ({ markers, onAddMarker, onRemoveMarker }) => {
           <li className="pt-1.5">
             Latitude: {marker.lat}, Longitude: {marker.lng}
           </li>
-          <div className="content-center text-center">
+          <div className="content-center text-center m-2">
             {!marker.persist && (
               <button
                 onClick={() => onAddMarker(index)}
-                className="bg-blue-500 text-white px-3 py-1.5 rounded hover:bg-blue-600 ml-1.5"
+                className="bg-blue-500 text-white px-3 py-1.5 rounded hover:bg-blue-600 ml-1.5 mb-2"
               >
                 Save Location
               </button>
